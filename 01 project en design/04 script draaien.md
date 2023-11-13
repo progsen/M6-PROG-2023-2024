@@ -1,0 +1,39 @@
+
+## Inloggen
+
+Nu hebben we een `sql` script.
+> Om daar iets mee te doen moeten we `inloggen` met een `gebruiker` op de `database`:
+> - de gebruiker moet `CREATE SCHEMA` rechten hebben 
+> - de gebruiker moet `CREATE TABLE` rechten hebben 
+
+- click op
+</br>![](img/dbman.PNG)
+
+- log in met de `root`
+- click op `+sql`
+</br>![](img/plussql.PNG)
+
+- plak je `sql` uit je `script` in het `sql text window`
+</br>![](img/paste.PNG)
+
+- druk op de bliksum knop
+</br>![](img/exe.PNG)
+
+## CHECK!
+
+- check of je geen fouten hebt:
+</br>![](img/check.PNG)
+
+- ga naar je schema tab
+</br>![](img/schemas.PNG)'
+
+- rechter muis click en kies `refresh`
+
+- check of je table er nu staat:
+</br>![](img/ok.PNG)'
+
+
+## Klaar?
+- maak een `screenshot` van je `hele` workbench
+    - sla die op als `04 weer sql.png`
+- commit naar je github
