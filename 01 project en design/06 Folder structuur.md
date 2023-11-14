@@ -1,12 +1,6 @@
 # Project setup
-- GitHub instellen
-  - config
-  - .gitignore
-  - .gitkeep
 - Folder structuur maken met .gitkeep
-- Docker configureren
-- Project opstarten
-- Commit in git
+
 
 ## GitHub
 - Maak een nieuwe GitHub repo aan met de volgende naam: `M6PROG`

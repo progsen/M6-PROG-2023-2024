@@ -33,4 +33,4 @@ $RECYCLE.BIN/
 .VolumeIcon.icns
 
 ### Application
-docker/mysqldata
+.env
