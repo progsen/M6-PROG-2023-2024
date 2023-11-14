@@ -3,6 +3,11 @@
 We gaan weer van design naar een table werken
 
 
+## Directory
+
+- maak een directory in je `M6PROG` met de naam:
+    - `01 design`
+    
 ## Even herhalen, samen
 
 Stel we hebben de volgende `table`:
