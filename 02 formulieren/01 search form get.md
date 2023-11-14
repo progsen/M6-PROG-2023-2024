@@ -36,7 +36,7 @@ laten we beginnen met het opzetten van de html:
 > - het `input` element heeft een attribuut `name`, die wordt ook meegestuurd
 > - het `input` element heeft een attribuut `value`, die wordt ook meegestuurd
 
-## NAW
+## Search formulier
 
 - Maak nu zelf een formulier voor de met 1 invul veld:
     - Search
