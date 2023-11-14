@@ -1,4 +1,5 @@
-# 2/3 Project setup
+# M6 Prog Setup
+- Create repository
 - Git ignore
 - Invite docenten
 - Commit project to repository

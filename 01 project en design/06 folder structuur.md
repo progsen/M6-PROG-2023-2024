@@ -1,11 +1,12 @@
-# 1/3 Project setup
+# 1/2 Project setup
 - Project folder aanmaken
 - Folder structuur instellen
 - Git keep
 
 ## Project folder
 Voor dat wij gaan beginnen met code schrijven is het belangrijk om de correcte structuur neer te zetten.  
-1. Maak een project folder `M6PROG` aan op je computer 
+1. Maak een project folder `m6prog_project` aan binnen de `M6PROG` folder die je gelinked hebt aan git. <br>
+Dit is vanaf nu de root folder van het project.
 
 ## Structuur
 Van te voren weten wij dat het een php-html project gaat worden, dus de structuur is redelijk bekend.

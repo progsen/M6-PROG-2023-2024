@@ -1,4 +1,4 @@
-# 3/3 Project setup
+# 2/2 Project setup
 - Docker configureren
   - php
   - nginx
