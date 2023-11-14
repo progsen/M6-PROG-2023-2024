@@ -1,5 +1,4 @@
 # 2/3 Project setup
-- GitHub instellen
 - Git ignore
 - Invite docenten
 - Commit project to repository
