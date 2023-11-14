@@ -19,7 +19,7 @@ We gaan deze keer met html een formulier maken. De data uit dit formulier wordt 
 
 laten we beginnen met het opzetten van de html:
 
-- neem de volgende code over (in `form.html`)
+- neem de volgende code over (in `search.html`)
 </br>![](img/basichtml.PNG)
 
 - lees de volgende pagina:
@@ -38,20 +38,16 @@ laten we beginnen met het opzetten van de html:
 
 ## NAW
 
-- Maak nu zelf een formulier voor de volgende NAW gegevens:
-    - Naam
-    - Straat
-    - Huisnummer
-    - Postcode
-    - Email adres
+- Maak nu zelf een formulier voor de met 1 invul veld:
+    - Search
 
 - toon het formulier in de browser en maak een screenshot:
-    - noem de file `01 htmlform.png`
+    - noem de file `01 htmlsearchform.png`
 
 ## Action
 
-- wij veranderen nu de action naar `nawOpslaan.php`
-- die php file maken we nu aan `nawOpslaan.php` file ook alvast
+- wij veranderen nu de action naar `search.php`
+- die php file maken we nu aan `search.php` file ook alvast
 - zet alvast je php tag erin:
 ```php
 <?php
@@ -63,14 +59,13 @@ laten we beginnen met het opzetten van de html:
 
 - open je `form.html` in je browser
 - vul wat in en click op `submit`
-- controlleer of je nu naar de pagina `nawOpslaan.php` gaat:
-</br>![](img/naarphp.PNG)
+- controlleer of je nu naar de pagina `search.php` gaat:
+</br>![](img/naarsearchphp.PNG)
 
-> Zie je dat je nu de `url` krijgt met `?name=gfdgdf&straat`
-> dit is nog vrij oldschool, later gaan we dit met javascript doen en zorgen dat we niet naar de `.php` gaan
+> Zie je dat je nu de `url` krijgt met `?search=mario`
+> - Dit komt omdat een `form` standaard een `GET request` verstuurt
+> - dit is nog vrij oldschool, later gaan we dit met javascript doen en zorgen dat we niet naar de `.php` gaan
 
-
-## GET vs POST
 
 ## Klaar?
 - commit naar je github

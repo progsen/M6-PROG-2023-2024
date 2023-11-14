@@ -1,5 +1,5 @@
 
-method="POST" TODO 
+
 
 ## Html
 
@@ -42,6 +42,8 @@ laten we beginnen met het opzetten van de html:
 ## Action
 
 - wij veranderen nu de action naar `nawOpslaan.php`
+- zet ook het volgende attribuut in je form tag:
+     - `method="POST"`
 - die php file maken we nu aan `nawOpslaan.php` file ook alvast
 - zet alvast je php tag erin:
 ```php
@@ -57,11 +59,8 @@ laten we beginnen met het opzetten van de html:
 - controlleer of je nu naar de pagina `nawOpslaan.php` gaat:
 </br>![](img/naarphp.PNG)
 
-> Zie je dat je nu de `url` krijgt met `?name=gfdgdf&straat`
-> dit is nog vrij oldschool, later gaan we dit met javascript doen en zorgen dat we niet naar de `.php` gaan
-
-
-## GET vs POST
+> Zie je dat je nu de `url` krijgt zonder `?` en `data`?
+> - dit komt omdat we nu een `POST request` doen
 
 ## Klaar?
 - commit naar je github
