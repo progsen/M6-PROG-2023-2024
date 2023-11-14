@@ -16,25 +16,25 @@ Met deze `eigenschappen` (`colommen`):
 - regenInMilimeters
 
 Hoe maken we dan de table?
-<table>
-<tr><th>Windows</th><th>Mac</th></tr>
-<tr>
-    <td>
-        Gebruik "mysql workbench"</br>
-        <img src="img/workbenchmodel.PNG">
-        <img src="img/workbench.PNG">
-    </td>
-    <td>
-        Gebruik "draw.io"</br> 
-        <a href="https://app.diagrams.net/">https://app.diagrams.net/</a>
-        <img src="img/drawiobutton.PNG"></br> 
-        <img src="img/drawio.PNG">
 
-        <a href="https://www.drawio.com/doc/faq/add-rows">rijen toevoegen</a>
-        
-    </td>
-</tr>
-</table>
+
+Gebruik `mysql workbench`
+![](img/workbenchmodel.PNG)
+![](img/workbench.PNG)
+
+## `MAC`
+
+Gebruik "mysql workbench" (zie windows)</br> 
+
+> lukt dat niet? dan gebruikt "draw.io"</br> 
+> https://app.diagrams.net/
+> 
+> TIPS:
+> ![](img/drawiobutton.PNG) 
+> ![](img/drawio.PNG)
+> 
+> zie ook https://www.drawio.com/doc/faq/add-rows
+      
 
 ## Datatypes:
 
@@ -64,6 +64,6 @@ En nu bedenken of de `colommen` nog `speciale regels` hebben:
 ## Klaar?
 
 - maak een screenshot
-- sla die op als `04 weer diagram.png`
+    - sla die op als `04 weer diagram.png`
 - bewaar het model als `weeroefening.mwb`
 - commit naar je github

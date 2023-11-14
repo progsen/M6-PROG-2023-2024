@@ -1,4 +1,8 @@
 
+## scripts uitrollen
+ 
+Dit is voor workbench. Op Mac kan je HeidiSql gebruiken of mysqld in de commandprompt.
+
 ## Inloggen
 
 Nu hebben we een `sql` script.
@@ -32,6 +36,9 @@ Nu hebben we een `sql` script.
 - check of je table er nu staat:
 </br>![](img/ok.PNG)'
 
+## Php admin
+
+> op deze manier kan je het later ook via `phpmyadmin` op jouw `docker` de `database` uitrollen
 
 ## Klaar?
 - maak een `screenshot` van je `hele` workbench
