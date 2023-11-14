@@ -54,7 +54,11 @@ laten we beginnen met het opzetten van de html:
 
 ## Testen
 
-- open je `naw.html` in je browser
+- open je directory waar `naw.html` instaat in een `terminal`
+- type in:
+    - `php -S localhost:4001`
+    > dit start `php` als een `webhost`
+- open `http://localhost:4001/naw.html` in je browser
 - vul wat in en click op `submit`
 - controlleer of je nu naar de pagina `nawOpslaan.php` gaat:
 </br>![](img/naarphp.PNG)

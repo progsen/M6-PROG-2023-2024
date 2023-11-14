@@ -38,10 +38,17 @@ laten we beginnen met het opzetten van de html:
 
 ## Search formulier
 
+- open je `search.html` in `visual studio code`
 - Maak nu zelf een formulier voor de met 1 invul veld:
     - Search
 
-- toon het formulier in de browser en maak een screenshot:
+## Testen
+- open je directory waar `search.html` instaat in een `terminal`
+- type in:
+    - `php -S localhost:4000`
+    > dit start `php` als een `webhost`
+- open `http://localhost:4000/search.html` in je browser
+- maak een screenshot van je search formulier:
     - noem de file `01 htmlsearchform.png`
 
 ## Action
