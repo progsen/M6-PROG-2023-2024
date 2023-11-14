@@ -1,7 +1,6 @@
-# Project setup
+# 2/3 Project setup
 - GitHub instellen
 - Git ignore
-- Git keep
 - Invite docenten
 - Commit project to repository
 
@@ -15,17 +14,7 @@ Voor dit project werken wij met een private repository zodat je code niet zonder
 Een gitignore file zorgt ervoor dat bepaalde bestanden en folders niet naar git verstuurd worden.
 Zo kun je ervoor zorgen dat je git repo niet te groot wordt en dat bestanden met wachtwoorden niet publiekelijk toegankelijk zijn.
 1. Maak een `.gitignore` file aan, let hierbij goed op de naamgeving.
-2. Plaats in dit bestand minimaal de informatie uit het .gitignore voorbeeld [.gitignore](.gitignore)
- 
-## Git keep
-Git keep is een leeg bestandje dat ervor zrgt dat je een lege folder kunt toevoegen aan git. Hierdoor kun je een structuur aanmaken vordat de echte bestanden straks beschikbaar zijn.
-1. Maak een bestand aan met de naam .gitkeep
-2. Plaats dit bestand in de volgende folders:
-  - public/assets/css
-  - public/assets/js
-  - public/assets/scss
-  - public/images
-  - uploads
+2. Plaats in dit bestand minimaal de informatie uit het .gitignore voorbeeld [.gitignore](../voorbeeld_bestanden/.gitignore)
 
 ## Git invite 
 Omdat je repo op private staat kunnen de docenten niet bij je code.
