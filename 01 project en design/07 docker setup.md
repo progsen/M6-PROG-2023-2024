@@ -8,10 +8,78 @@
 - Commit in git
 
 ## Docker
-Wij werken weer met een docker containers.
-De volgende containers zijn - Maak een docker file
-  - docker-compose.yml
-  - version: '3.9'
-  - #Services
-  - #php service
+Wij werken weer met docker containers voor de web based applicatie.
+In het document `docker-compose.yml` gaan wij de structuur aanmaken van dit project.
+1. geef de versie aan: `version: '3.9'`
+2. maak een onderdeel `services` aan
 
+## php
+Binnen de services gaan wij verschillende services toevoegen. Let hierbij op het inspringen van de code.<br>
+Maak een php service aan:
+```yaml
+  # PHP FPM Service
+  php:
+    image: wodby/php:latest
+    volumes:
+      - './:/var/www/html'
+    depends_on:
+      - mariadb
+```
+
+## nginx
+Maak een nginx proxy service aan:
+```yaml
+  # Nginx Service
+  nginx:
+    image: nginx:latest
+    ports:
+      - 88:80
+    links:
+      - 'php'
+    volumes:
+      - './:/var/www/html'
+      - './docker/nginx:/etc/nginx/conf.d'
+    depends_on:
+      - php
+```
+
+## mariadb
+Maak een MariaDB database service aan:
+```yaml
+  # MariaDB Service
+  mariadb:
+    image: mariadb:latest
+    environment:
+      MYSQL_DATABASE: m6prog_db
+      MYSQL_USER: m6prog_user
+      MYSQL_PASSWORD: m6prog_pass
+      MYSQL_ROOT_PASSWORD: R00tp@ss
+    ports:
+      - 3308:3306
+```
+
+## PhpMyAdmin
+Om eenvoudig de database te kunnen beheren maken wij gebruiken van een phpmyadmin service. Maar je kunt ook via poort 3308 verbinden met een externe tool zoals heidisql of sequelAce. 
+```yaml
+  # phpmyadmin in an external image
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    environment:
+      PMA_HOST: mariadb
+      PMA_USER: m6prog_user
+      PMA_PASSWORD: m6prog_pass
+    ports:
+      - "1088:80"
+```
+
+## Start het project
+Nu gaan wij het project initialiseren.
+1. Zorg dat DockerDesktop aan staat
+2. Open de terminal of commandline en zorg dat je in de project folder zit waar ook het docker-compose.yml bestand staat.
+3. Start docker: `docker-compose up -d`
+4. Open je project in de browser en zie een wit scherm omdat de /public/index.php leeg is: <br>
+[http://localhost:88](http://localhost:88)
+5. Je hebt nu een werkend en gestructureerd project
+
+## Commit
+Zorg ervoor dat je alle wijzigingen commit
