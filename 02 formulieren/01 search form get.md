@@ -8,12 +8,17 @@ We gaan deze keer met html een formulier maken. De data uit dit formulier wordt 
 
 ## files maken
 
-- Maak een map aan in je `M6Prog` map:
-    - `02 formulieren`
-- maak de volgende files aan:
+- maak een directory in je `M6PROG` met de naam:
+    - `opdrachten`
+        - maak daarin de directory:
+            - `02 formulieren`
+- maak de volgende files aan in `02 formulieren`:
     - `search.html`
     - `naw.html`
-    - `app.js`
+- maak een directory in je `02 formulieren` met de naam:
+    - `assets`
+        - maak daarin de map `js`
+            - maak in js de file `app.js`
 
 ## HTML inhoud
 

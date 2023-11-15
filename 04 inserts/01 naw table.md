@@ -15,17 +15,16 @@ en we hadden er een `method="POST"` van gemaakt, ook konden we het in `php` leze
     - `04 inserts`
 - kopieeer je werk in `02 formulieren` naar `04 inserts`
 - maak een sql file aan:
-    - `01 naw.sql`
+    - `01 m6prog.sql`
 
 ## Table maken
 
 > HINT check je `sql` van ` design naar table.md`
 
 - open `01 naw.sql` in je `visual studio code`
-- type eerst je `CREATE SCHEMA` & `USE`:
-    - je schema gaat heten:
-        - `personenNaw`
-
+- type eerst je `USE`:
+        - `use m6prog;`
+> `CREATE SCHEMA` is niet nodig omdat docker dit voor je doet
 
 - we gaan nu een `create table` gebruiken om de volgende table te maken:
     - de table krijgt de naam `naw`
