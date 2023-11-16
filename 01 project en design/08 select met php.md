@@ -57,7 +57,7 @@ if (file_exists(__DIR__ . '/../.env')) {
 ## Maak een database verbinding via MySQLi
 1. Verbind met de database
     ```php 
-   $mysqli = new mysqli(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME); 
+   $connection = new mysqli(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME); 
    ```
 2. Defineer de mysql query, plaats een ? ( vraagteken ) op de plek waar een variabele moet komen
     ```php 
