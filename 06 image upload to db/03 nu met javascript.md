@@ -36,7 +36,7 @@ nu gaan we de eventListener bouwen:
 - upload een plaatje
     - ga je naar de `php` of blijf je op de `html`?
         - controlleer ook je `console.log` 
-            > </br>![](img/consoloeg.PNG)
+            > </br>![](img/consolelog.PNG)
         - en `network`
             > </br>![](img/network.PNG)
 
