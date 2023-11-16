@@ -47,7 +47,7 @@ if (file_exists(__DIR__ . '/../.env')) {
 ```
 5. Maak een aantal constanten aan met de waardes uit .env 
 ```php
-  define('DB_NAME', (isset($envSettings['DB_NAME'])) ? $envSettings['DB_NAME'] : 'example');
+  define('DB_SCHEMA', (isset($envSettings['DB_SCHEMA'])) ? $envSettings['DB_SCHEMA'] : 'example');
   define('DB_USER', (isset($envSettings['DB_USER'])) ? $envSettings['DB_USER'] : 'username');
   define('DB_PASSWORD', (isset($envSettings['DB_PASSWORD'])) ? $envSettings['DB_PASSWORD'] : 'pass');
   define('DB_HOST', (isset($envSettings['DB_HOST'])) ? $envSettings['DB_HOST'] : 'mariadb');
@@ -57,7 +57,7 @@ if (file_exists(__DIR__ . '/../.env')) {
 ## Maak een database verbinding via MySQLi
 1. Verbind met de database
     ```php 
-   $connection = new mysqli(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME); 
+   $connection = new mysqli(DB_HOST, DB_USER, DB_PASSWORD, DB_SCHEMA); 
    ```
 2. Defineer de mysql query, plaats een ? ( vraagteken ) op de plek waar een variabele moet komen
     ```php 
