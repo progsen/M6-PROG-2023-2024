@@ -29,12 +29,12 @@ Nu hebben we een `sql` script.
 </br>![](img/check.PNG)
 
 - ga naar je schema tab
-</br>![](img/schemas.PNG)'
+</br>![](img/schemas.PNG)
 
 - rechter muis click en kies `refresh`
 
 - check of je table er nu staat:
-</br>![](img/ok.PNG)'
+</br>![](img/ok.PNG)
 
 ## Php admin
 
