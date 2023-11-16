@@ -65,7 +65,7 @@ if (file_exists(__DIR__ . '/../.env')) {
     ```
 3. Bereid de query voor zodat de database server weet wat er aan gaat komen
     ```php
-    $stmt = $mysqli->prepare($sql);
+    $stmt = $connection->prepare($sql);
    ```
 4. Geef aan wat de waarde van het vraagteken is. In dit geval een string met bijvoorbeeld 'amsterdam'
     ```php
