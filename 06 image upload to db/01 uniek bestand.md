@@ -1,5 +1,3 @@
-Pas de naam van het bestand aan tijdens de upload zodat deze altijd uniek is en overeenkomt met de database
-
 ## Temp dir
 
 We hebben nu ons bestand in de temp dir... dat willen we niet
