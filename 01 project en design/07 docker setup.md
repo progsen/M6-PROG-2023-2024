@@ -59,15 +59,16 @@ Maak een MariaDB database service aan:
 ```
 
 ## PhpMyAdmin
-Om eenvoudig de database te kunnen beheren maken wij gebruiken van een phpmyadmin service. Maar je kunt ook via poort 3308 verbinden met een externe tool zoals heidisql of sequelAce. 
+Om eenvoudig de database te kunnen beheren maken wij gebruiken van een phpmyadmin service. Maar je kunt ook via poort 3308 verbinden met een externe tool zoals heidisql of sequelAce.<br>
+Gebruik de root ( admin user ) gegevens om in te loggen zodat je straks meer rechten hebt
 ```yaml
   # phpmyadmin in an external image
   phpmyadmin:
     image: phpmyadmin/phpmyadmin
     environment:
       PMA_HOST: mariadb
-      PMA_USER: m6prog_user
-      PMA_PASSWORD: m6prog_pass
+      PMA_USER: root
+      PMA_PASSWORD: R00tp@ss
     ports:
       - "1088:80"
 ```

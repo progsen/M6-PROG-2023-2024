@@ -20,73 +20,122 @@ Wij gaan nu de instellingen uit de .env file verwerken in php. Eerst structurere
 1. Open .env_example en plaats de volgende regels:
     ```
     DB_HOST=
-    DB_DATABASE=
+    DB_SCHEMA=
     DB_USER=
     DB_PASSWORD=
+    HOSTNAME=http://localhost:88/
+    SOURCE_ROOT=/var/www/html/source
     ```
 2. Open nu .env en plaats de volgende regels:
     ```
     DB_HOST=mariadb
-    DB_DATABASE=
+    DB_SCHEMA=
     DB_USER=
     DB_PASSWORD=
+    HOSTNAME=http://localhost:88/
+    SOURCE_ROOT=/var/www/html/source
     ```
 3. Plaats de database gegevens uit docker-compose.yaml op de juiste plek ( MYSQL_DATABASE, MYSQL_USER , MYSQL_PASSWORD ) 
 
 ## Verwerk het .env bestand
 Om de gegevens uit het .env bestand te laden moeten wij via php de juiste informatie ophalen.
-1. Open `/source/database.php`
+1. Open `/source/config.php`
 2. Start php `<?php` *( we sluiten php niet af )*
-3. Maak een variabele aan voor de settings: 
-```php $envSettings = []; ```
-4. Controleer of het bestand aanwezig is:
-```php
-if (file_exists(__DIR__ . '/../.env')) {
+3. Controleer of het bestand aanwezig is en stop het project wanneer dit niet het geval is.
+    ```php
+    if ( ! file_exists(__DIR__ . '/../.env')) {
+        die('Geen .env bestand gevonden');
+    }
+    ```
+4. Parse het .env bestand:
+    ```php
     $envSettings = parse_ini_file(__DIR__ . '/../.env');
-}
-```
+    ```
 5. Maak een aantal constanten aan met de waardes uit .env 
-```php
-  define('DB_SCHEMA', (isset($envSettings['DB_SCHEMA'])) ? $envSettings['DB_SCHEMA'] : 'example');
-  define('DB_USER', (isset($envSettings['DB_USER'])) ? $envSettings['DB_USER'] : 'username');
-  define('DB_PASSWORD', (isset($envSettings['DB_PASSWORD'])) ? $envSettings['DB_PASSWORD'] : 'pass');
-  define('DB_HOST', (isset($envSettings['DB_HOST'])) ? $envSettings['DB_HOST'] : 'mariadb');
-```
+    ```php
+      define('DB_SCHEMA', (isset($envSettings['DB_SCHEMA'])) ? $envSettings['DB_SCHEMA'] : 'example');
+      define('DB_USER', (isset($envSettings['DB_USER'])) ? $envSettings['DB_USER'] : 'username');
+      define('DB_PASSWORD', (isset($envSettings['DB_PASSWORD'])) ? $envSettings['DB_PASSWORD'] : 'pass');
+      define('DB_HOST', (isset($envSettings['DB_HOST'])) ? $envSettings['DB_HOST'] : 'mariadb');
+    ```
 
 
 ## Maak een database verbinding via MySQLi
-1. Verbind met de database
+1. Open `/source/database.php`
+2. De instellingen zijn al geladen in de index
+3. Start php `<?php` *( we sluiten php niet af )*
+4. Maak een database verbinding functie
+    ```php
+   function database_connect()
+   {
+      
+   }
+   ``` 
+4. Verbind met de database in deze functie
     ```php 
    $connection = new mysqli(DB_HOST, DB_USER, DB_PASSWORD, DB_SCHEMA); 
    ```
-2. Defineer de mysql query, plaats een ? ( vraagteken ) op de plek waar een variabele moet komen
+   Je kunt ook een controle toevoegen of de verbinding is geslaagd:
+   ```php
+   if ($connection->connect_errno) {
+      die( 'Failed to connect to MySQL: ' . $connection->connect_error );
+   }
+   ```
+5. Zorg dat deze functie de database verbinding terug geeft
+   ```php
+   return $connection;
+   ```
+
+## Haal gegevens op uit de database
+1. Open index.php
+3. Start php `<?php` *( we sluiten php niet af )*
+4. Require de config.php
+   ```php 
+   require_once '../source/config.php';
+   ```
+5. Require de database.php. Hiervoor kun je nu de constante SOURCE_ROOT gebruiken uit het .env bestand
+   ```php 
+   require_once SOURCE_ROOT . 'database.php';
+   ```
+6. Haal de database verbinding op
+   ```php
+   $connection = database_connect();
+   ```
+7. Maak een variabele aan voor de plaats, dit is straks een criteria om data op te halen.
+   ```php
+   $plaats = 'amsterdam';
+   ```
+8. Defineer de mysql query, plaats een ? ( vraagteken ) op de plek waar een variabele moet komen
     ```php 
     $sql = 'SELECT * FROM weersomstandighedenPerDag WHERE Plaats=? ORDER BY Datum'; 
     ```
-3. Bereid de query voor zodat de database server weet wat er aan gaat komen
+6. Bereid de query voor zodat de database server weet wat er aan gaat komen
     ```php
     $stmt = $connection->prepare($sql);
    ```
-4. Geef aan wat de waarde van het vraagteken is. In dit geval een string met bijvoorbeeld 'amsterdam'
+7. Geef aan wat de waarde van het vraagteken is. In dit geval een string met bijvoorbeeld 'amsterdam'
     ```php
    $stmt->bind_param('s', 'amsterdam');
     ```
-5. Voor de query uit op de server
+8. Voor de query uit op de server
     ```php
     $stmt->execute();
-    ``````
-6. Haal het resultaat op
+    ```
+9. Haal het resultaat op
     ```php
     $result = $stmt->get_result();
-    ``````
-7. Verwerk nu het resultaat in een array zodat ik iets met de data kan */
+    ```
+10. Verwerk nu het resultaat in een array zodat ik iets met de data kan */
     ```php
     $weersomstandigheden = mysqli_fetch_assoc($result);
-   ```
-8. Geef de data weer:
+    ```
+11. Geef de data weer:
     ```php
     var_dump( $weersomstandigheden );
     ```
+
+## Meerdere resultaten
+Je hebt nu maar één resultaat opgehaald, zou je er ook meer kunnen weergeven?
 
 ## Rond de les af
 Commit het resultaat, vergeet niet om een dump van de database toe te voegen in git.
