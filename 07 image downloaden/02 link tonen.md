@@ -38,5 +38,15 @@
     > </br>![](img/notfound.PNG)
 
     
+## QR code
+
+- probeer nu ook een QR code te genereren
+    - gebruik bijvoorbeeld deze library
+        - https://github.com/davidshimjs/qrcodejs/tree/master
+        - lees de `README` om uit te zoeken hoe het moet
+        - je hebt een element nodig waarin de qrcode libary kan werken
+            - bijvoorbeeld een `p`
+    > </br>![](img/qrcode.PNG)
+
  ## Klaar?
 - commit naar je github
