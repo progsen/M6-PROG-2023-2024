@@ -25,6 +25,7 @@ Met deze `eigenschappen` (`colommen`):
 Hoe maken we dan de table?
 
 
+## `WINDOWS`
 Gebruik `mysql workbench`
 ![](img/workbenchmodel.PNG)
 ![](img/workbench.PNG)
