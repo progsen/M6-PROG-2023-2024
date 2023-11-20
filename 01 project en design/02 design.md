@@ -54,7 +54,7 @@ laten we de `datatypes` bedenken:
 > - Plaats => woorden => `varchar(120)`
 > - aantalGraden => 35.5? dus met punt => `decimal`
 > - windKracht => hele getallen => `INT`
-> - regenInMilimeters => in milimeters, dus hele getallen =>  `INT`
+> - regenInMilimeters => in milimeters, dus hele getallen =>  `DECIMAL`
 
 En nu bedenken of de `colommen` nog `speciale regels` hebben: 
 
