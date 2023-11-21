@@ -63,6 +63,7 @@ laten we beginnen met het opzetten van de html:
 - controlleer of je nu naar de pagina `nawOpslaan.php` gaat:
 </br>![](img/naarphp.PNG)
 
+> #### UITLEG
 > Zie je dat je nu de `url` krijgt zonder `?` en `data`?
 > - dit komt omdat we nu een `POST request` doen
 

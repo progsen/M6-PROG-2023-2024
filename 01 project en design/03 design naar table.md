@@ -8,6 +8,7 @@ Omdat je soms ook SQL moet kunnen gaan we deze keer de CREATE table zelf schrijv
 - we beginnen met een nieuwe database dus:
 </br>![](img/schema.PNG)
 
+> #### UITLEG
 > - `CREATE SCHEMA ...` maakt een nieuw schema (database)
 > - `use ...` selecteerd dat schema (anders kan de database de tabellen niet vinden)
 

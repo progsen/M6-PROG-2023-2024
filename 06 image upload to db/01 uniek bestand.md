@@ -12,7 +12,7 @@ we willen het in de `uploads` directory, BUITEN de `public`
 - daaronder zet je:
 > </br>![](img/filepick.PNG)
 
-#### UITLEG
+> #### UITLEG
 > - we maken eerst een `$response` associative array aan:
 >   - daarin zit een `succeeded` boolean en een `message` (voor fouten)
 > - Daarna halen we de file `image` op uit `$_FILES`

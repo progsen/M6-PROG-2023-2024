@@ -15,8 +15,8 @@
 - zorg dat je de function `GetQueryResultsAssoc` uit `search.php` in `imagedownload.php` zet
 - kopieer ook `FindPersoon($conn,$name)` uit `search.php` in `imagedownload.php` 
 
-#### UITLEG
 
+> #### UITLEG
 > we gaan nu FindPersoonLike aanpassen zodat we het plaatje uit de database selecteren
 > - dit doen we op basis van `$id`
 > - dan pakken we de `filename` uit de database (door ons gemaakt)

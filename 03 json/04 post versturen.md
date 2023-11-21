@@ -29,8 +29,8 @@ Dit is wat ingewikkelder, we gebruiken weer fetch
 - zet het `volgende` onderaan in `toPhpWithPost`:
     > </br>![](img/fetchoption.PNG)
 
-#### UITLEG
 
+> #### UITLEG
 > hier maken we `options` aan, die vertellen `fetch`:
 > - hoe die moet gaan versturen (`POST`)
 > - wat die moet versturen (`body`)

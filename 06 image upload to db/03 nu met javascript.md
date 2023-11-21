@@ -24,7 +24,7 @@ nu gaan we de eventListener bouwen:
 - maak een nieuwe function `uploadFormFile` en zet daarin:
 > </br>![](img/postform.PNG)
 
-#### UITLEG
+> #### UITLEG
 > - zie je dat we bijna hetzelfde doen als in `appNaw.js`?
 > - alleen geven we meteen de `FormData` aan de `body`?
 

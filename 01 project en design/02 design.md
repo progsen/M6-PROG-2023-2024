@@ -25,23 +25,11 @@ Met deze `eigenschappen` (`colommen`):
 Hoe maken we dan de table?
 
 
-## `WINDOWS`
-Gebruik `mysql workbench`
-![](img/workbenchmodel.PNG)
-![](img/workbench.PNG)
-
-## `MAC`
-
-Gebruik "mysql workbench" (zie windows)</br> 
-
-> lukt dat niet? dan gebruikt "draw.io"</br> 
-> https://app.diagrams.net/
-> 
-> TIPS:
-> ![](img/drawiobutton.PNG) 
-> ![](img/drawio.PNG)
-> 
-> zie ook https://www.drawio.com/doc/faq/add-rows
+Gebruik `mysql workbench`  
+- druk op:
+    > ![](img/workbenchmodel.PNG)  
+- dan kan je tabellen maken:
+    > ![](img/workbench.PNG)
       
 
 ## Datatypes:

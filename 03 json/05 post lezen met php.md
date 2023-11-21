@@ -6,8 +6,8 @@
 - check wat er terugkomt in je `network debugger`:
     > </br>![](img/networkpost.PNG)
 
-#### UITLEG
 
+> #### UITLEG
 > we gebruiken nu `file_get_contents('php://input') ;` 
 > - dit haalt de hele body content van de httprequest op
 > - kijk hieronder, zie je dat we in de options:

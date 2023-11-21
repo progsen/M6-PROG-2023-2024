@@ -57,6 +57,7 @@ Nu gaan we dit in php ook doen.
     > </br>![](img/aanroep.PNG)
 
 
+> #### UITLEG
 > - zie je dat we eerst de connection maken?
 > - daarna geven we de connection door
 > - dan maken we een variabel `$searchResults` en halen de resultaten op met `FindPersoon` en die komen dan in `$searchResults`

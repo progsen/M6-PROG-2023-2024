@@ -62,6 +62,7 @@ nu moeten we de code gaan schrijven.
     - ga naar de `volgende` regel (enter), en type daar:
     > </br>![](img/then.PNG)
 
+> #### UITLEG
 > - `fetch` levert een `promise` op, met then `reageer` je op wanneer de fetch `klaar` is, een beetje zoals een `event`
 > - tussen de haken van `then` staat een nieuwe `anonieme function`
 >       - het argument van de function is `response` wat het resultaat van de fetch is
