@@ -55,9 +55,9 @@ nu gaan we de table schrijven:
 Nu alle colommen gedaan zijn, komen we bij het laatste stukje:  
 *De primary key(s) en indices*
 
-- tik deze over:
+- zet achter de `NOT NULL` van `plaats` een komma (`,`)
+- daarachter zet je dit:
 </br>![](img/primary.PNG)
-> HINT: er moet we een `,` achter de laatste colom staan!
 
 
 ## Klaar?
