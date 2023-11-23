@@ -6,6 +6,7 @@ Dit is voor workbench. Op Mac kan je HeidiSql gebruiken of mysqld in de commandp
 ## Inloggen
 
 Nu hebben we een `sql` script.
+- open `weer.sql` in je `mysql workbench` 
 > Om daar iets mee te doen moeten we `inloggen` met een `gebruiker` op de `database`:
 > - de gebruiker moet `CREATE SCHEMA` rechten hebben 
 > - de gebruiker moet `CREATE TABLE` rechten hebben 

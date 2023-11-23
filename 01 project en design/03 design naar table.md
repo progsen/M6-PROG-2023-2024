@@ -3,7 +3,7 @@
 
 Omdat je soms ook SQL moet kunnen gaan we deze keer de CREATE table zelf schrijven.
 
-- Maak een `sql` file aan:
+- Maak een `sql` file aan in `visual studio code`:
     - `weer.sql`
 - we beginnen met een nieuwe database dus:
 </br>![](img/schema.PNG)
@@ -29,14 +29,19 @@ nu gaan we de table schrijven:
 
 > voorbeeld  
 > de ID colom: 
-> </br>![](img/idcol.PNG)
+> </br>![](img/idcol.PNG)  
 > het patroon is dus:
 > - `NAME` (idWeersomstandighedenPerDag)
 > - `DATATYPE` (`INT`) en in ons geval gevolgd door `UNSIGNED`
 > - Mag het leeg zijn? (`NULL` of `NOT NULL`)
 > - omdat we een `primary key` als `INT` hebben en we die niet zelf willen vullen zetten we er `AUTO_INCREMENT` achter
 
-- neem deze hieronder nu over:
+- zet nu dit in je `weer.sql`:
+> </br>![](img/idcol.PNG)  
+- zet achter de `NOT NULL` :
+    - `AUTO_INCREMENT` 
+
+- zet daarachter:
 </br>![](img/date.PNG)
 
 - schrijf nu zelf de andere colommen:
