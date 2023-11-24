@@ -28,8 +28,8 @@ Voor nu mogen dit lege bestanden zijn. Maak de volgende bestanden aan:
 - \docker\nginx\nginx.conf *( gebruik hiervoor het voorbeeld bestand: [nginx.conf](../voorbeeld_bestanden/nginx.conf) )*
 - \source\config.php *( hier komen de instellingen zoals de hostname en de database login gegevens )*
 - \source\database.php *( dit bestand gebruiken wij straks voor de database verbinding )*
-- \.env *( Hier komen je instellingen zoals de database login gegevens te staan )*
-- \.env_example *( Dit is een voorbeeld van hoe de structuur van de .env file eruit moet zien )*
+- \\.env *( Hier komen je instellingen zoals de database login gegevens te staan )*
+- \\.env_example *( Dit is een voorbeeld van hoe de structuur van de .env file eruit moet zien )*
 - \docker-compose.yml *( hiermee kunnen wij de ontwikkelomgeving opzetten )*
 
 ## Git keep
