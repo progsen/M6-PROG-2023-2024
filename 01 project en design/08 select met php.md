@@ -24,7 +24,7 @@ Wij gaan nu de instellingen uit de .env file verwerken in php. Eerst structurere
     DB_USER=
     DB_PASSWORD=
     HOSTNAME=http://localhost:88/
-    SOURCE_ROOT=/var/www/html/source
+    SOURCE_ROOT=/var/www/html/source/
     ```
 2. Open nu .env en plaats de volgende regels:
     ```
