@@ -73,6 +73,41 @@ Gebruik de root ( admin user ) gegevens om in te loggen zodat je straks meer rec
       - "1088:80"
 ```
 
+## nginx conf
+Nu je de docker klaar hebt staan kun je de nginx.conf instellen. Plaats daarvoor deze code in de /docker/nginx/nginx.conf
+```apacheconf
+server {
+    listen 80 default_server;
+    listen [::]:80 default_server;
+    
+    server_name localhost;
+
+    root /var/www/html/public;
+    index index.php index.html;
+
+    # Support Yii2 pretty URL routing
+    location / {
+            try_files $uri $uri/ =404;
+            if (!-e $request_filename){
+                    rewrite ^/(.*) /index.php?r=$1 last;
+            }
+    }
+
+    location ~* \.php$ {
+        fastcgi_pass php:9000;
+        include fastcgi_params;
+        fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
+        fastcgi_param SCRIPT_NAME $fastcgi_script_name;
+    }
+
+    # Prevent additional headers like TRACE, DELETE, PUSH
+    if ($request_method !~ ^(GET|HEAD|POST)$ )
+        {
+            return 405;
+        }
+}
+```
+
 ## Start het project
 Nu gaan wij het project initialiseren.
 1. Zorg dat DockerDesktop aan staat

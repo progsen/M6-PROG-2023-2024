@@ -24,7 +24,7 @@ Wij gaan nu de instellingen uit de .env file verwerken in php. Eerst structurere
     DB_USER=
     DB_PASSWORD=
     HOSTNAME=http://localhost:88/
-    SOURCE_ROOT=/var/www/html/source
+    SOURCE_ROOT=/var/www/html/source/
     ```
 2. Open nu .env en plaats de volgende regels:
     ```
@@ -58,7 +58,7 @@ Om de gegevens uit het .env bestand te laden moeten wij via php de juiste inform
       define('DB_PASSWORD', (isset($envSettings['DB_PASSWORD'])) ? $envSettings['DB_PASSWORD'] : 'pass');
       define('DB_HOST', (isset($envSettings['DB_HOST'])) ? $envSettings['DB_HOST'] : 'mariadb');
     ```
-
+Definieer in dit bestand ook de andere constantes die nodig hebt voor bijvoorbeeld de hostname en de source_root.
 
 ## Maak een database verbinding via MySQLi
 1. Open `/source/database.php`
