@@ -47,6 +47,7 @@ laten we beginnen met het opzetten van de html:
 - open je `search.html` in `visual studio code`
 - Maak nu zelf een formulier voor de met 1 invul veld:
     - Search
+    - vergeet niet ook een submit knop te maken!
 
 ## Testen
 - open je directory waar `search.html` instaat in een `terminal`
@@ -70,7 +71,7 @@ laten we beginnen met het opzetten van de html:
 
 ## Testen
 
-- open je `form.html` in je browser
+- open je `search.html` in je browser
 - vul wat in en click op `submit`
 - controlleer of je nu naar de pagina `search.php` gaat:
 </br>![](img/naarsearchphp.PNG)
