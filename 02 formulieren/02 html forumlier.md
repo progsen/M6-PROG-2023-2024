@@ -10,7 +10,7 @@ We gaan deze keer met html een formulier maken. De data uit dit formulier wordt 
 
 laten we beginnen met het opzetten van de html:
 
-- neem de volgende code over (in `form.html`)
+- neem de volgende code over (in `nawform.html`)
 </br>![](img/basichtml.PNG)
 
 - lees de volgende pagina:
