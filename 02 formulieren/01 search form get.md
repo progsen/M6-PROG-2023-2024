@@ -14,7 +14,7 @@ We gaan deze keer met html een formulier maken. De data uit dit formulier wordt 
             - `02 formulieren`
 - maak de volgende files aan in `02 formulieren`:
     - `search.html`
-    - `naw.html`
+    - `nawform.html`
 - maak een directory in je `02 formulieren` met de naam:
     - `assets`
         - maak daarin de map `js`
