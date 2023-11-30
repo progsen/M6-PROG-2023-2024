@@ -61,22 +61,12 @@ openssl req -x509 \
 - dan ziet het er zo uit:
     > </br>![](img/certs.PNG)
     
-## naar de NGINX container
 
-#### UITLEG
-> nu moeten deze certificaten naar de NGINX container
-> daarvoor moeten deze de container in laten kopieeren
-
-- open je `docker-compose.yml`
-    - voeg het volgende toe:
-        > </br>![](img/compose.PNG)
-
-## container opnieuw
-
-- delete je container 
-> </br>![](img/delete.PNG)
-- `docker compose` je container weer
-- maak je `tables` opnieuw
+> #### SECURITY UITLEG
+> Normaal zet je `NOOIT` key certificaten in git, alleen de `public` variant mag
+> in dit geval kan het `MAAR`:
+> - als je dit ergens `LIVE` gaat zetten, `MOET` je andere certificaten maken!
+> Dit komt omdat als iemand je `private key` certificaat heeft die persoon zich kan `voordoen` als jou/ jou server
 
  ## Klaar?
 - commit naar je github
