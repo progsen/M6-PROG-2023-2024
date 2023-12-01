@@ -11,7 +11,7 @@ We gaan deze keer met html een formulier maken. De data uit dit formulier wordt 
 - Navigeer naar de public directory in je project:
 - maak de volgende files aan:
     - `search.html`
-    - `naw.html`
+    - `nawform.html`
 
 ## HTML inhoud
 
