@@ -13,9 +13,6 @@ laten we beginnen met het opzetten van de html:
 - neem de volgende code over (in `nawform.html`)
 </br>![](img/basichtml.PNG)
 
-- lees de volgende pagina:
-   -  https://www.w3schools.com/html/html_forms.asp
-
 ## hoe werkt het?
 
 - bekijk deze code: (uit w3 schools)

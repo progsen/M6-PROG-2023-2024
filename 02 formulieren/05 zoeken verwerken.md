@@ -34,7 +34,8 @@ Wij gebruiken de WeersomstandighedenPerDag tabel van vorige week.
 
 ## Verbinding
 1. Kopieer de alle code uit index.php
-2. Je hebt nu een database verbinding en de benodigde prepare statement
+2. Plaats deze code nu in search.php 
+3. Je hebt nu een database verbinding en de benodigde prepare statement
 
 ## Informatie ophalen uit de superglobal
 In de php code hebben wij vorige week een placeholder variabele `$plaats` gemaakt, die gaan wij nu vullen met informatie uit de $_GET 

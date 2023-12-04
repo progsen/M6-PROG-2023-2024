@@ -57,6 +57,8 @@ Om de gegevens uit het .env bestand te laden moeten wij via php de juiste inform
       define('DB_USER', (isset($envSettings['DB_USER'])) ? $envSettings['DB_USER'] : 'username');
       define('DB_PASSWORD', (isset($envSettings['DB_PASSWORD'])) ? $envSettings['DB_PASSWORD'] : 'pass');
       define('DB_HOST', (isset($envSettings['DB_HOST'])) ? $envSettings['DB_HOST'] : 'mariadb');
+      define('HOSTNAME', (isset($envSettings['HOSTNAME'])) ? $envSettings['HOSTNAME'] : 'mariadb');
+      define('SOURCE_ROOT', (isset($envSettings['SOURCE_ROOT'])) ? $envSettings['SOURCE_ROOT'] : 'mariadb');
     ```
 Definieer in dit bestand ook de andere constantes die nodig hebt voor bijvoorbeeld de hostname en de source_root.
 
@@ -138,4 +140,7 @@ Definieer in dit bestand ook de andere constantes die nodig hebt voor bijvoorbee
 Je hebt nu maar één resultaat opgehaald, zou je er ook meer kunnen weergeven?
 
 ## Rond de les af
-Commit het resultaat, vergeet niet om een dump van de database toe te voegen in git.
+- maak een screenshot van je resultaten in je browser
+  - sla dit op als `08 weerdata browser.png`   
+  - Dus waar je je weerdata kan zien
+- Commit het resultaat, vergeet niet om een dump van de database toe te voegen in git.
