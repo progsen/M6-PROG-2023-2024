@@ -15,7 +15,7 @@ en we hadden er een `method="POST"` van gemaakt, ook konden we het in `php` leze
     - `04 inserts`
 - kopieeer je werk in `02 formulieren` naar `04 inserts`
 - maak een sql file aan:
-    - `01 m6prog.sql`
+    - `01 naw.sql`
 
 ## Table maken
 
