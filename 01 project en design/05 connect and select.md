@@ -7,7 +7,7 @@
 - plak deze `sql` in het `sql text window`
 ```SQL
 
-INSERT into weer.weersomstandighedenPerDag (`datum`,`aantalGraden`,`windKracht`,`regenInMilimeters`,`plaats`) 
+INSERT into weersomstandighedenPerDag (`datum`,`aantalGraden`,`windKracht`,`regenInMilimeters`,`plaats`) 
 values
  ("2023-01-01",1,10,80,"amsterdam"),
  ("2023-01-01",4,1,10,"den bosch"),
