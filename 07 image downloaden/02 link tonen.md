@@ -2,7 +2,7 @@
 ## We hebben de link
 
 
-- open je `imageupload.html`
+- open je `imageupload.html` in je browser
     - zet daar een nieuw element in:
         - `a` , met id `link`
 

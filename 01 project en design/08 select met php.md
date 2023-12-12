@@ -141,6 +141,6 @@ Je hebt nu maar één resultaat opgehaald, zou je er ook meer kunnen weergeven?
 
 ## Rond de les af
 - maak een screenshot van je resultaten in je browser
-  - sla dit op als `08 weerdata browser.png`   
+  - sla die op in `screenshots` als `08 weerdata browser.png`   
   - Dus waar je je weerdata kan zien
 - Commit het resultaat, vergeet niet om een dump van de database toe te voegen in git.

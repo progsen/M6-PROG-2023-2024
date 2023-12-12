@@ -1,6 +1,7 @@
 ## JS
 
-- maak `imagedownload.php` aan
+- maak in je `public` in je docker maak je een file:
+    - `imagedownload.php`
 - kijk naar:
     > </br>![](img/notfound.PNG)
     - zie je de `querystring` dus wat achter de `?` staat.

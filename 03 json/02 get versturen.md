@@ -42,7 +42,7 @@
 - druk weer op `submit`, en kijk of je de `get request` ziet verschijnen
     > </br>![](img/getreq.PNG)
 - maak daar een screenshot van:
-    - noem de file `02 get network.png`
+    - sla die op in `screenshots` als `02 get network.png`
 
  ## Klaar?
 - commit naar je github

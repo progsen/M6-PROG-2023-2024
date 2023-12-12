@@ -4,7 +4,7 @@ Cool we hebben nu JSON data welke uit de database gekomen is. Maar nu nog een re
 
 ## HTML klaarmaken
 
-- open je `search.html`
+- open je `searchNaw.html`
     - voeg een `section` tag toe ONDER je formulier (dus naar de `</form>`)
 - geef die section voor elke column in `naw`:
     - een paragraaf `<p>`
@@ -45,7 +45,7 @@ Cool we hebben nu JSON data welke uit de database gekomen is. Maar nu nog een re
     > </br>![](img/searchdisplay.PNG)`
 
 - zoek een van je eigen verzonnen personen en maak een screenshot:
-    - `displayperson.png`
+    - sla die op in `screenshots` als `displayperson.png`
     
 ## Klaar?
 - commit naar je github

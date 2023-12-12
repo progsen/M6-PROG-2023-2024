@@ -43,5 +43,5 @@ Nu hebben we een `sql` script.
 
 ## Klaar?
 - maak een `screenshot` van je `hele` workbench
-    - sla die op als `04 weer sql.png`
+    - sla die op in `screenshots` als `04 weer sql.png`
 - commit naar je github

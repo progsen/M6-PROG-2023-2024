@@ -33,11 +33,12 @@ values
     - TIP: je kan colommen met `,` achter elkaar zetten
 - sla je query op in een nieuwe file:
     - `05 select.sql`
-- maak een screenshot van de resultaten en sla die op
-    - in file `05 select.png`
+    - sla deze op in je `sql` directory
+- maak een screenshot van de resultaten
+    - sla die op in `screenshots` als `05 select.png`
 
 
 ## Klaar?
 - maak een `screenshot` van je resultaat 
-    - sla die op als `05 weer php.png`
+    - sla die op in `screenshots` als `05 weer php.png`
 - commit naar je github

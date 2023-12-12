@@ -40,13 +40,13 @@ Die is leeg daar moet nog wat in
 
 tijd om te testen
 
-- open je `imageupload.html`
+- open je `imageupload.html` in je browser
     - upload een plaatje
         - check je upload directory:
             > </br>![](img/uploads.PNG)
 - upload nog `3` plaatjes
 - maak een screenshot van je `upload` directory
-    - noem deze `06 uploads.png`
+    - sla die op in `screenshots` als `06 uploads.png`
 
     
  ## Klaar?

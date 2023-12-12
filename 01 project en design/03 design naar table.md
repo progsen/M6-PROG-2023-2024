@@ -5,6 +5,7 @@ Omdat je soms ook SQL moet kunnen gaan we deze keer de CREATE table zelf schrijv
 
 - Maak een `sql` file aan in `visual studio code`:
     - `weer.sql`
+    - sla deze op in je `sql` directory
 - we beginnen met een nieuwe database dus:
 </br>![](img/schema.PNG)
 

@@ -11,11 +11,9 @@ en we hadden er een `method="POST"` van gemaakt, ook konden we het in `php` leze
 
 ## Opzetten
 
-- maak een nieuwe directory:
-    - `04 inserts`
-- kopieeer je werk in `02 formulieren` naar `04 inserts`
 - maak een sql file aan:
     - `01 naw.sql`
+    - sla deze op in je `sql` directory
 
 ## Table maken
 

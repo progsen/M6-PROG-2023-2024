@@ -1,7 +1,7 @@
 
 ## voorbereiden
 
-- maak in je public folder de volgende files:
+- maak in je `public` folder van je docker de volgende files:
     - `fetch.html`
     - `fetchGet.php`
     - `fetchPost.php`

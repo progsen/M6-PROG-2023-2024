@@ -6,10 +6,11 @@ We gaan weer van design naar een table werken
 ## Directory
 
 - maak een directory in je `M6PROG` met de naam:
-    - `opdrachten`
-        - maak daarin de directory:
-            - `01 design`
-    
+    - `sql` (hier plaatsen we al onze `.sql` files)
+
+- maak een directory in je `M6PROG` met de naam:
+    - `screenshots` (hier plaatsen we al onze `screenshot` files)
+
 ## Even herhalen, samen
 
 Stel we hebben de volgende `table`:
@@ -60,6 +61,6 @@ En nu bedenken of de `colommen` nog `speciale regels` hebben:
 ## Klaar?
 
 - maak een screenshot
-    - sla die op als `04 weer diagram.png`
-- bewaar het model als `weeroefening.mwb`
+    - sla die op in `screenshots` als `04 weer diagram.png`
+- bewaar het model als `weeroefening.mwb` in je `sql` directory
 - commit naar je github

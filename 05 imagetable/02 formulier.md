@@ -4,7 +4,7 @@ we gaan nu ervoor zorgen dat we een image kunnen uploaden naar PHP
 
 ## HTML
 
-- maak een nieuwe html file:
+- maak een nieuwe html file onder je `public` van je docker:
     - `imageupload.html`
 
 - zet in je html:
@@ -22,7 +22,7 @@ we gaan nu ervoor zorgen dat we een image kunnen uploaden naar PHP
 ## php
 
 
-- maak een nieuwe php file:
+- maak een nieuwe php file onder je `public` van docker:
     - `imagereceive.php`
 - zet daar je standaard php tag in:
 ```php
@@ -36,7 +36,7 @@ we gaan nu ervoor zorgen dat we een image kunnen uploaden naar PHP
 
 ## testen
 
-- laad je `imageupload.html`
+- open `imageupload.html` in je browser
 - upload een `png` en kijk naar wat je terugkrijgt van php:
 > </br>![](img/result.PNG)
 
@@ -77,7 +77,7 @@ we gaan nu ervoor zorgen dat we een image kunnen uploaden naar PHP
 
 ## testen 2
 
-- laad je `imageupload.html`
+- open `imageupload.html` in je browser
 - upload een `png` en kijk naar wat je terugkrijgt van php:
 
 - ga naar je `uploads` directory:

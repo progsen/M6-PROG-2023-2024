@@ -1,19 +1,19 @@
 ## JSON ontvangen
 
-`search.php` geeft nu json terug. Daar kan javascript wat mee!
+`searchNaw.php` geeft nu json terug. Daar kan javascript wat mee!
 
-We gaan nu verder in `search.html`, daar gaan we met `fetch` naar `search.php`
+We gaan nu verder in `searchNaw.html`, daar gaan we met `fetch` naar `searchNaw.php`
 en dan lezen we de  `response` in javascript in
 
 ## submit met javascript
 
-- open je `search.html`
+- open je `searchNaw.html`
     - pas je code aan zodat het formulier een id heeft:
     > </br>![](img/searchid.PNG)
 
 - open je `app.js`
     - we gaan `searchForm` selecteren en in javascript halen:
-        > </br>![](img/selectsearch.PNG)
+        > </br>![](img/selectsearchNaw.PNG)
 
 - maak een nieuwe function, gebruik deze code:
         > </br>![](img/searchpersoonfunc.PNG)
@@ -24,7 +24,7 @@ en dan lezen we de  `response` in javascript in
 
 ## STOP!
 
-Als we nu submit clicken gaan we gewoon naar `search.php`:
+Als we nu submit clicken gaan we gewoon naar `searchNaw.php`:
 - test dit
 
 - zet nu in je `searchPersoon` function de volgende regel code:
@@ -79,7 +79,7 @@ nu nog de JSON lezen
 - pas je then aan naar dit stuk code:
     > </br>![](img/logjson.PNG)
 
-> nu blijven we op de `search.html`, maar gaan wel naar `search.php`, en krijgen `data` terug. Dat is hoe veel moderne sites werken!
+> nu blijven we op de `searchNaw.html`, maar gaan wel naar `searchNaw.php`, en krijgen `data` terug. Dat is hoe veel moderne sites werken!
 
 ## Klaar?
 - commit naar je github

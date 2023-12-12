@@ -49,7 +49,7 @@ laten we beginnen met het opzetten van de html:
     > dit start `php` als een `webhost`
 - open `http://localhost:4000/search.html` in je browser
 - maak een screenshot van je search formulier:
-    - noem de file `01 htmlsearchform.png`
+    - sla die op in `screenshots` als `01 htmlsearchform.png`
 
 ## Action
 

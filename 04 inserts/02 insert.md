@@ -5,6 +5,7 @@ laten we eerst de insert in de database even oefenen:
 
 - maak een nieuwe file:
     - `02 insert naw.sql`
+    - sla deze op in je `sql` directory
 - zet daar het volgende in:
     > </br>![](img/insertlines.PNG)
 
@@ -17,16 +18,32 @@ laten we eerst de insert in de database even oefenen:
     - resultaat:
     > </br>![](img/select.PNG)
 
+## Formulier
+
+- maak een nieuwe file:
+    - `searchNaw.html`
+- maak daar de standaard html opzet in
+    > TIP: gebruik `!`
+- maak een formulier aan:
+    - met `1 text input veld`
+        - met name `searchPersoon`
+    - maak een `submit button`
+- de method moet `GET` zijn
+- de `action` moet naar `searchNaw.php` gaan
+- het formulier moet een `id` hebben:
+    - `searchForm`
+
 
 ## Naar php
 
 Nu gaan we dit in php ook doen.
-- open je `search.php`
+- maak een nieuwe file:
+    - `searchNaw.php`
     - include hier je `database.php` (waar je database connection/gegevens staan)
     > </br>![](img/includedb.PNG)
 > Let even op het pad, zie je de `..` we gaan `relatief` naar waar `database.php` staat want die staat niet in dezelfde directory
 
-- neem nu de code hieronder over in `search.php`
+- neem nu de code hieronder over in `searchNaw.php`
     > </br>![](img/helperfunc.PNG)
 
 > dit is een helper function waarmee je iets wat je anders elke keer zou moeten schrijven nu op 1 plek maakt
@@ -50,6 +67,15 @@ Nu gaan we dit in php ook doen.
     - gebruik een `where` om te filteren op `naam`
         - LET OP: je zet voor de waarde niet `$name` daarin maar `?` vanwege de prepared statement
 
+## $_GET
+
+- maak een nieuwe variable:
+    - `$searchInput`
+    - geef deze de waarde die vanuit je formulier verstuurd wordt
+        - dus uit je `querystring`, gebruik `$_GET`
+        - bekijk je `html` hoe had je de `name` van je input text genoemd?
+            - die waarde moet je gebruiken!
+
 ## testen
 
 - nu nog testen, gebruik deze code
@@ -66,13 +92,15 @@ Nu gaan we dit in php ook doen.
 - test en controlleer of je dit krijgt:
     > </br>![](img/leraargevonden.PNG)
 - zoek nu ook leraar1
-    - maak een screenshot, save die als `leraargevonden.png`
+    - maak een screenshot:
+        - sla die op in `screenshots` als `leraargevonden.png`
 
 ## meer data
 
 
 - maak een nieuwe file:
     - `03 insert naw.sql`
+    - sla deze op in je `sql` directory
 - zet daar 3 nieuwe personen in (verzin ze zelf)
     - gebruik geen echte data!
     
@@ -80,6 +108,7 @@ Nu gaan we dit in php ook doen.
 
 - zoek nu ook alle 3 je personen uit de `meer data` stap
     - maak een screenshot voor elke zoekactie
+        - sla die op in `screenshots` als `meerpersonen.png`
 
 ## JSON, MIME en headers
 

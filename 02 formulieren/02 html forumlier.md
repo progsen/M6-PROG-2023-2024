@@ -34,7 +34,7 @@ laten we beginnen met het opzetten van de html:
     - Email adres
 
 - toon het formulier in de browser en maak een screenshot:
-    - noem de file `01 htmlform.png`
+    - sla die op in `screenshots` als `01 htmlform.png`
 
 ## Action
 
