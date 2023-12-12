@@ -37,7 +37,7 @@ we gaan nu ervoor zorgen dat we een image kunnen uploaden naar PHP
 ## testen
 
 - laad je `imageupload.html`
-- upload een png en kijk naar wat je terugkrijgt van php:
+- upload een `png` en kijk naar wat je terugkrijgt van php:
 > </br>![](img/result.PNG)
 
 
@@ -52,9 +52,37 @@ we gaan nu ervoor zorgen dat we een image kunnen uploaden naar PHP
 > - `type`, welke `extensie` heeft de `file`
 > - `error`, deze moet op `0` staan, anders is er iets mis
 
-## openen
+## Docker en files
 
-- ga naar de directory die bij `tmp_name` staat
+> #### UITLEG
+> als we dit in docker doen krijgen we te zien dat de file in `/tmp` staat:  
+> ![](img/temp.PNG)  
+> alleen als we daar kijken in docker zit er niets in   
+> ![](img/tmpleeg.PNG)  
+> dat komt omdat die file op linux meteen gedelete wordt
+
+- controlleer dat:
+    - open je `nginx` container in `docker desktop`
+    - zoek op hoe je de files van de container kan zien
+    - bekijk je `/tmp` dir
+        > ![](img/tmpleeg.PNG)
+
+## file bewaren
+
+- open `imagereceive.php`
+    - voeg het volgende toe:
+        > ![](img/savefile.PNG)
+> de `["image"]` is de `name` van je `upload input` in je `html form`
+
+
+## testen 2
+
+- laad je `imageupload.html`
+- upload een `png` en kijk naar wat je terugkrijgt van php:
+
+- ga naar je `uploads` directory:
+    > ![](img/uploads.PNG)
+
 - open het plaatje
     - lukt dat? mooi je upload heeft gewerkt!
     
