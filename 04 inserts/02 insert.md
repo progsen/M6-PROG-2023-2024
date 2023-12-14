@@ -91,7 +91,7 @@ Nu gaan we dit in php ook doen.
 
 - test en controlleer of je dit krijgt:
     > </br>![](img/leraargevonden.PNG)
-- zoek nu ook leraar1
+- zoek nu ook `leraar`
     - maak een screenshot:
         - sla die op in `screenshots` als `leraargevonden.png`
 
