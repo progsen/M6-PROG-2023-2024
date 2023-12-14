@@ -71,6 +71,8 @@ Nu gaan we dit in php ook doen.
 
 - maak een nieuwe variable:
     - `$searchInput`
+        - zet dit boven in je file
+            - (niet in een function!)
     - geef deze de waarde die vanuit je formulier verstuurd wordt
         - dus uit je `querystring`, gebruik `$_GET`
         - bekijk je `html` hoe had je de `name` van je input text genoemd?
@@ -80,6 +82,8 @@ Nu gaan we dit in php ook doen.
 
 - nu nog testen, gebruik deze code
     > `LET OP`, misschien heten jullie `$user`,`$pass, etc anders, check je `database.php`
+    > - zet dit onder je `$searchInput`
+    >     - (niet in een function!)
     > </br>![](img/aanroep.PNG)
 
 
@@ -91,7 +95,7 @@ Nu gaan we dit in php ook doen.
 
 - test en controlleer of je dit krijgt:
     > </br>![](img/leraargevonden.PNG)
-- zoek nu ook leraar1
+- zoek nu ook `leraar`
     - maak een screenshot:
         - sla die op in `screenshots` als `leraargevonden.png`
 
