@@ -28,8 +28,10 @@ we gaan deze opdracht:
 
 ## script
 
-- maak nu ieder voor zich een `script` van de design 
-- rol je script uit in je database voor `BO` en voor `m6prog`
+- iedereen doet nu zelf:
+
+    - maak een `script` van de design 
+    - rol je script uit in je docker database voor `BO` en voor `m6prog`
 
  ## Klaar?
 - commit naar je github
