@@ -28,8 +28,32 @@ we gaan deze opdracht:
 
 ## script
 
-- maak nu ieder voor zich een `script` van de design 
-- rol je script uit in je database voor `BO` en voor `m6prog`
+- iedereen doet nu zelf:
+
+    - maak een `script` van de design 
+        - sla deze op in `01 imagetable.sql`
+
+
+## automatische date time
+
+- als je nog geen `uploaddatetime` had gaan we die nu maken:
+    - maak een nieuwe colom in je `imagetable` in `01 imagetable.sql`:
+        - noem deze `uploadDateTime` met de volgende eigenschappen:
+            > - deze heeft een `DateTime` als datatype
+            > - deze is `NOT NULL`
+            > - deze is `NOT NULL`
+            > - deze heeft achter aan het volgende staan:
+            >   - ` DEFAULT CURRENT_TIMESTAMP`
+
+> met ` DEFAULT CURRENT_TIMESTAMP` zeggen we als er `geen` waarde in de `insert` of `update` staat:
+> - haal dan de `huidige tijd` op
+> - `gebruik` die als `waarde`
+> Dit lijkt een beetje op `AUTO_INCREMENT`  
+> Je kan ook `andere types` *( bijvoorbeeld INT)* een `default waarde` geven
+
+## uitrollen
+
+- rol je script uit in je `docker database` voor `BO` en voor `m6prog`
 
  ## Klaar?
 - commit naar je github
