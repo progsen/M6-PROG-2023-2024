@@ -95,6 +95,13 @@ dus laten we dat zo even maken:
 - kijk nu in `search.php`, hoe je json terugstuurt 
     - stuur in `nawOpslaan.php` `$response` terug als `json`:
     > </br>![](img/nicejson.PNG)`
-    
+
+- Dit doe je door de json header toe te voegen én je resultaat weer te geven, bijvoorbeeld:
+```php
+header('Content-Type: application/json; charset=utf-8');
+echo json_encode( $mijn_variabele_array );
+```
+
+
  ## Klaar?
 - commit naar je github
