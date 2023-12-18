@@ -51,11 +51,8 @@ laten we beginnen met het opzetten van de html:
 
 ## Testen
 
-- open je directory waar `naw.html` instaat in een `terminal`
-- type in:
-    - `php -S localhost:4001`
-    > dit start `php` als een `webhost`
-- open `http://localhost:4001/naw.html` in je browser
+- Ga in je browser naar lokale test omgeving ( docker ) en plaats de bestand naam achter de url.
+- bijvoorbeeld `http://localhost:88/naw.html`
 - vul wat in en click op `submit`
 - controlleer of je nu naar de pagina `nawOpslaan.php` gaat:
 </br>![](img/naarphp.PNG)

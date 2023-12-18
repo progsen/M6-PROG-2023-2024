@@ -28,7 +28,23 @@ if ($count['count'] > 0) {
     return false;
 }
 ```
-En dit zie ik in de html:
+
+## data uit JSON verwerken
+Nu is het tijd om de data te verwerken. De fetch pas ik nu zo aan dat je ook de data kan gaan verwerken en niet alleen de responce opvangt.
+```javascript
+fetch("nawopslaan.php", options)
+    .then(response => response.json())
+    .then(data => {
+        if (false === data.success) {
+            alert('niet goed');
+            return false;
+        }
+        console.log( 'Je data is toegevoegd met id:' + data.id );
+    })
+    .catch(error => console.error(error));
+```
+
+Als dit allemaal gelukt is dan zie ik dit zie ik in de html:
  > </br>![](img/dubbele_email.png)`
 
 
