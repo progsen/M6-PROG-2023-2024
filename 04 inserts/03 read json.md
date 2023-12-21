@@ -51,7 +51,7 @@ Nu moeten we een `url` maken, daarvoor hebben we de `search input` nodig uit het
 
 nu moeten we de code gaan schrijven.
 
-- Zet de fetch in je searchPersoon onder waar je de url gemaakt hebt:
+- Zet de fetch in je `searchPersoon` onder waar je de url gemaakt hebt:
     > </br>![](img/fetch.PNG)
 
 - test en kijk bij je `network` in je `web developer tools` van je `browser` of je de `fetch` ziet staan:

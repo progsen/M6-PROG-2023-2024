@@ -14,6 +14,13 @@ Nu nog een persoon kunnen maken. Dat doen we met het NAW formulier
 - maak een  `appNaw.js` file in `assets/js`
 - pas in `naw.html` de javascript file aan:
     > </br>![](img/appnaw.PNG)`
+- zorg dat je de volgende data kan invoeren met `input` velden:
+    > - `naam` 
+    > - `email`
+    > - `straat` 
+    > - `huisnummer` 
+    > - `postcode`
+
     
 ## javascript post
 

@@ -131,10 +131,14 @@ Nu gaan we dit in php ook doen.
 
 ## Testen
 
-- zoek nog een keer, krijg je nu dit?
+- zoek nog een keer
+
+> #### ERROR HINTS
+> het kan zijn dat je nu dit krijgt:
 > </br>![](img/error.PNG) 
-- zoek in je `search.php` andere naar `echo` regels dan die van de `json_encode`
-    - haal die weg met commentaar `//`
+> ##### Oplossing:
+> - zoek in je `search.php` andere naar `echo` regels dan die van de `json_encode`
+>    - haal die weg met commentaar `//`
 
 - zoek nog een keer krijg je nu dit:
     > </br>![](img/jsongood.PNG)
