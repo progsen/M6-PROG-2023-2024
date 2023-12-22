@@ -12,6 +12,8 @@
     - zet daar het volgende in:
     > </br>![](img/datecalc.PNG)
     - probeer die statement uit
+        > ` update `imageupload` set uploadDateTime = DATE_ADD(CURRENT_DATE, INTERVAL -31 DAY); 
+ ` dit moet even via `phpmyadmin` niet `workbench`
         - maak een screenshot
             - sla die op in `screenshots` als `05 update date.png`
 
