@@ -7,10 +7,21 @@ we willen het in de `uploads` directory, BUITEN de `public`
 ## HOE DAN?
 
 - open `imagereceive.php`
+
+## opruimen
+
+- haal even de 2 stukken code hieronder weg
+    - door er commentaar van te maken
+    > </br>![](img/files.PNG)
+
+    > ![](img/savefile.PNG)
+
+## Nieuw function
 - maak daar een nieuwe `function` in:
 > </br>![](img/handleFile.PNG)
 - daaronder zet je:
 > </br>![](img/filepick.PNG)
+
 
 > #### UITLEG
 > - we maken eerst een `$response` associative array aan:
