@@ -12,6 +12,48 @@
     - `- 881:443` moet erbij (zie plaatje hierboven)
         > </br>![](img/ports.PNG)
 
+## zet NGINX ssl aan
+
+- nu open je `docker\nginx\nginx.conf`
+- zet de code hieronder `onderaan` in die file
+```
+
+server {
+    listen              443 ssl;
+    server_name         localhost;
+    ssl_certificate     cert.crt;
+    ssl_certificate_key cert.key;
+    ssl_protocols       TLSv1 TLSv1.1 TLSv1.2 TLSv1.3;
+    ssl_ciphers         HIGH:!aNULL:!MD5;
+
+    root /var/www/html/public;
+    index index.php index.html;
+
+    # Support Yii2 pretty URL routing
+    location / {
+            try_files $uri $uri/ =404;
+            if (!-e $request_filename){
+                    rewrite ^/(.*) /index.php?r=$1 last;
+            }
+    }
+
+    location ~* \.php$ {
+        fastcgi_pass php:9000;
+        include fastcgi_params;
+        fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
+        fastcgi_param SCRIPT_NAME $fastcgi_script_name;
+    }
+
+    # Prevent additional headers like TRACE, DELETE, PUSH
+    if ($request_method !~ ^(GET|HEAD|POST)$ )
+        {
+            return 405;
+        }
+}
+```
+
+> dit zorgt ervoor dat NGINX ook naar de SSL poort gaat luisteren en daar de HTTP requests serveert
+
 ## container opnieuw
 
 - delete je container 
