@@ -13,7 +13,7 @@ en dan lezen we de  `response` in javascript in
 
 - open je `app.js`
     - we gaan `searchForm` selecteren en in javascript halen:
-        > </br>![](img/selectsearchNaw.PNG)
+        > </br>![](img/selectsearch.PNG)
 
 - maak een nieuwe function, gebruik deze code:
         > </br>![](img/searchpersoonfunc.PNG)
